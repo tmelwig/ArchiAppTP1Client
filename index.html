@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>so empty</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-  <p>I am so empty...</p>
-  </body>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button id="toggleTheme">Changer le thème</button>
+  <header>
+    <h1>Messagerie connectée</h1>
+  </header>
+
+  <main>
+    <section aria-labelledby="messages-title">
+      <h2 id="messages-title">Messages récents</h2>
+      <ul id="messageList">
+        <li>Message 1 : C'est le mois du printemps.</li>
+        <li>Message 2 : Le soleil se couche plus tard qu'en hiver.</li>
+        <li>Message 3 : C'est mon anniversaire.</li>
+        <li>Message 4 : La journée de la femme est le 8 mars.</li>
+        <li>Message 5 : Il y a 31 jours dans le mois.</li>
+      </ul>
+      <button id="updateButton">Mise à jour des messages</button>
+    </section>
+
+    <section aria-labelledby="post-message-title">
+      <h2 id="post-message-title">Poster un message</h2>
+      <div class="input-group">
+        <label for="pseudo">Pseudo :</label>
+        <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo..." maxlength="20">
+        <span id="charCount">0/20 max</span>
+      </div>
+
+      <textarea id="message" name="message" rows="4" cols="50" placeholder="Entrer votre message ici..."></textarea>
+      <button id="sendButton" type="submit">Envoyer</button>
+    </section>
+  </main>
   <script src="script.js"></script>
+</body>
+
 </html>

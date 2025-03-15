@@ -1,0 +1,235 @@
+/* Light Mode */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+#toggleTheme {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+}
+
+#toggleTheme:hover {
+  background-color: #555;
+}
+
+header {
+  background-color: #a7e2e6;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #0044cc;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #e6e6e6;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.no-message {
+  text-align: center;
+  font-style: italic;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.message-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6e6e6;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  position: relative;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.pseudo {
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.message-text {
+  padding-top: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.date {
+  font-size: 0.8em;
+  color: gray;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  word-wrap: break-word;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#charCount {
+  font-size: 14px;
+  color: #333;
+}
+
+#charCount.max-length-reached {
+  color: red;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #079905;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #036d05;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode #toggleTheme {
+  color: #000;
+  background-color: #fff;
+}
+
+body.dark-mode #toggleTheme:hover {
+  background-color: #ccc;
+}
+
+header.dark-mode {
+  background-color: #333;
+}
+
+main.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2 {
+  color: #cdf561;
+}
+
+li.dark-mode {
+  background-color: #333;
+}
+
+body.dark-mode .no-message {
+  color: #ddd;
+  background-color: #333;
+}
+
+body.dark-mode .message-item {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .pseudo {
+  color: #ffcc00;
+}
+
+body.dark-mode .message-text {
+  color: #ddd;
+}
+
+body.dark-mode .date {
+  color: #aaa;
+}
+
+body.dark-mode input[type="text"] {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark-mode #charCount {
+  color: #bbb;
+}
+
+body.dark-mode #charCount.max-length-reached {
+  color: red;
+}
+
+body.dark-mode textarea {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+button.dark-mode {
+  background-color: #555;
+}
+
+body.dark-mode button:hover {
+  background-color: #666;
+}
