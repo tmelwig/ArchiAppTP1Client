@@ -41,8 +41,8 @@
 //     { "msg": "I love cats", "pseudo": "Tomato", "date": new Date().toLocaleString() }
 // ];
 
-// Server url
-var SERVER_URL = 'https://3829c82b-a657-4a82-ad9a-9479b4d2d036-00-3euxtujyul5r3.janeway.replit.dev';
+// Server URL (from the .env)
+const SERVER_URL = process.env.SERVER_URL;
 
 // update() for TP1 - 3.2
 // function update(newMsgs) {
