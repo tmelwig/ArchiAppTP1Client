@@ -41,8 +41,8 @@
 //     { "msg": "I love cats", "pseudo": "Tomato", "date": new Date().toLocaleString() }
 // ];
 
-// Server URL (from the .env)
-const SERVER_URL = process.env.SERVER_URL;
+// Server URL
+const SERVER_URL = "https://archiapptp2server.onrender.com";
 
 // update() for TP1 - 3.2
 // function update(newMsgs) {
