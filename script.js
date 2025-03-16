@@ -191,7 +191,7 @@ document.getElementById("sendButton").addEventListener("click", function() {
     document.getElementById("pseudo").value = "";
     document.getElementById("message").value = "";
     const charCountDisplay = document.getElementById('charCount');
-    charCountDisplay.textContent = "0/20 max;
+    charCountDisplay.textContent = "0/20 max";
     loadMessages(); // Refresh the messages from the server
   })
   .catch(error => console.error("Error posting message:", error));
